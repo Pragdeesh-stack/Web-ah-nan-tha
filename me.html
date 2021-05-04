@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,6 +59,30 @@
     
       </div>
       <style>
+          		::-moz-selection {
+  			color: #444;
+  			background: gray;
+		}
+
+			::selection {
+  			color: #fff;
+  			background: gray;
+		}
+          ::-webkit-scrollbar-track {
+  background:transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#b8b9be; 
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #282642; 
+}
 :root {
   --primary: #ddd;
   --dark: #333;
